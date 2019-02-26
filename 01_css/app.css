@@ -4,6 +4,7 @@ body {
 }
 
 #navbar, #banner, #main, #bottom {
+  position: fixed;
   background-color: white;
   max-width: 30em;
   width: 100%;
@@ -16,6 +17,7 @@ body {
 }
 
 i.avatar, i.icon {
+  display: inline-block;
   background-position: center;
   height: 30px;
 }
@@ -33,6 +35,8 @@ i.icon {
 }
 
 .right {
+  position: absolute;
+  right: 0.5em;
 }
 
 .avatar.dirty { background-image: url(./res/dirty.jpg) }
@@ -47,6 +51,7 @@ i.icon {
 }
 
 #main {
+  z-index: -1;
   box-sizing: border-box;
   padding: 1px 4% 5vh;
   position: relative;
@@ -60,7 +65,7 @@ i.icon {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 30px;
 }
 
 p {
